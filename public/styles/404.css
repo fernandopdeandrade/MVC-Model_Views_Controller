@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main>h1 {
+  font-size: 3rem;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+main>a {
+  margin-bottom: 2rem;
+  padding: 10px;
+  border: none;
+  color: black;
+  text-decoration: none;
+  background-color: greenyellow;
+}
+
+main>a:hover {
+  background-color: rgb(111, 175, 16);
+}
+
+main>a:active {
+  scale: 0.95;
+  box-shadow: 3px 3px 3px #000000;
+}
+
+main>p {
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  margin: 50px;
+}

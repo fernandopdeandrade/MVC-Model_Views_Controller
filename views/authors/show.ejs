@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles/show.css" rel="stylesheet" type="text/css" />
+  <title>show-mvc</title>
+</head>
+
+<body>
+  <main>
+    <h1>Detalhes do Autor</h1>
+    <nav>
+      <ul>
+        <li>Id: <%= author.id %>
+        </li>
+        <li>Nome: <%= author.name %>
+        </li>
+        <li>Data de nascimento: <%= author.birthday %>
+        </li>
+        <li>Nacionalidade: <%= author.nationality %>
+        </li>
+      </ul>
+    </nav>
+    <div class="edit-delete">
+      <a class="edit" href="/authors/<%= author.id %>/edit">Editar</a><br>
+      <a class="delete" href="/authors/<%= author.id %>/delete">Deletar</a><br>
+    </div>
+    <a href="/authors">Voltar para página inicial</a>
+  </main>
+</body>
+
+</html>

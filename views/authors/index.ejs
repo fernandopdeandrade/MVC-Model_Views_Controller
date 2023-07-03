@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles/home.css" rel="stylesheet" type="text/css" />
+  <title>home-mvc</title>
+</head>
+
+<body>
+  <main>
+    <h1>Lista de Autores</h1>
+    <nav>
+      <% authors.forEach((author)=> { %>
+        <ul>
+          <li>
+            Nome: <%= author.name %>
+          </li>
+          <li>
+            Data-Nascimento: <%= author.birthday %>
+          </li>
+          <li>
+            Nacionalidade: <%= author.nationality %>
+          </li>
+          <a href="/authors/<%= author.id %>">Ver Detalhes</a>
+        </ul>
+        <br>
+        <% }) %>
+    </nav>
+    <a href="/authors/new">Criar novo autor</a>
+  </main>
+</body>

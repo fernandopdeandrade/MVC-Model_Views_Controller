@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles/new.css" rel="stylesheet" type="text/css" />
+  <title>new-mvc</title>
+</head>
+
+<body>
+  <main>
+    <h1>Cadastrar novo author</h1>
+    <form action="/authors" method="POST">
+      <input id="first_name" name="firstName" type="text" placeholder="Primeiro-nome..." />
+      <input id="middle_name" name="middleName" type="text" placeholder="Nome-do-meio..." />
+      <input id="last_name" name="lastName" type="text" placeholder="Último-nome..." />
+      <label for="birthday">Data de nascimento:</label>
+      <input id="birthday" name="birthday" type="date" />
+      <input id="nationality" name="nationality" type="text" placeholder="Nacionalidade..." />
+      <button type="submit">Criar novo autor!</button>
+    </form>
+    <% if (message) { %>
+      <p>
+        <%= message %>
+      </p>
+      <% } %>
+        <a href="/authors">Voltar para página inicial</a>
+  </main>
+</body>
+
+</html>
