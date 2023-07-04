@@ -18,7 +18,7 @@
     <b>👀 Como rodar a aplicação?</b>
   </summary>
 
-Instale as dependências com o comando => npm install:
+Instale as dependências com o comando:
 
 ```bash
 npm install
